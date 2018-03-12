@@ -11,7 +11,7 @@
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 #  Install the latest kernel
-yum --enablerepo=elrepo-kernel install kernel-ml
+yum --enablerepo=elrepo-kernel -y install kernel-ml
 #  Set up the default grub2 boot entry
 grub2-set-default 1
 #
@@ -22,10 +22,9 @@ echo 'net.ipv4.tcp_congestion_control=bbr' | tee -a /etc/sysctl.conf
 sysctl -p
 #
 ## Reboot
-read -p "Restart now to finish installation? [y/n]" restart
-if [[ ${restart} == "y" || ${restart} == "Y" ]]; then
-    shutdown -r now
+read -p "Restart now to finish installation? [y/n]" reboot
+if [[ ${reboot} == "y" || ${reboot} == "Y" ]]; then
+    reboot
 else
     exit
 fi
-
