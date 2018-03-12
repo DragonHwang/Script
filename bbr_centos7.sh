@@ -22,7 +22,6 @@ echo 'net.ipv4.tcp_congestion_control=bbr' | tee -a /etc/sysctl.conf
 sysctl -p
 #
 ## Reboot
-echo
 read -p "Restart now to finish installation? [y/n]" restart
 if [[ ${restart} == "y" || ${restart} == "Y" ]]; then
     shutdown -r now
