@@ -11,7 +11,7 @@
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 #  Install the latest kernel
-yum --enablerepo=elrepo-kernel install kernel-ml -y
+yum --enable repo=elrepo-kernel install kernel-ml -y
 #  Set up the default grub2 boot entry
 grub2-set-default 1
 #
