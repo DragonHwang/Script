@@ -2,7 +2,7 @@
 #
 # Auto install latest Linux kernel and enable TCP BBR
 #
-# System Required:  Vultr CentOS 7 x64
+# System Required:  CentOS 7 x86_64
 #
 # Author:  Shuokang the Great
 #
@@ -11,7 +11,7 @@
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 #  Install the latest kernel
-yum --enable repo=elrepo-kernel install kernel-ml -y
+yum --enablerepo=elrepo-kernel install kernel-ml
 #  Set up the default grub2 boot entry
 grub2-set-default 1
 #
