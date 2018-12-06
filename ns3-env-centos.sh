@@ -19,3 +19,6 @@ sudo yum install git -y
 sudo yum install gsl gsl-devel -y
 sudo yum install gtk2 gtk2-devel -y
 sudo yum install gdb valgrind -y
+sudo yum install gdb cmake -y
+sudo yum install gdb patch -y
+sudo yum install gdb unzip -y
