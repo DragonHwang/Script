@@ -15,9 +15,7 @@ sudo yum install uncrustify -y
 sudo yum install boost-devel -y
 sudo yum install graphviz graphviz-devel python-setuptools-devel ipython -y
 sudo sudo easy_install pygraphviz -y
-sudo yum install goocanvas pygtk2-devel -y
-sudo rpm -ivh pygoocanvas-0.14.1-3.el6.nux.x86_64.rpm  -y
-sudo rpm -ivh pygoocanvas-devel-0.14.1-3.el6.nux.x86_64.rpm -y
+sudo yum install goocanvas pygoocanvas pygtk2-devel -y
 sudo yum install git -y
 sudo yum install gsl gsl-devel -y
 sudo yum install gtk2 gtk2-devel -y
