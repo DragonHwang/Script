@@ -1,3 +1,4 @@
+sudo yum update
 sudo yum install gcc-c++ python -y
 sudo yum install python-devel -y
 sudo yum install qt5-devel -y
