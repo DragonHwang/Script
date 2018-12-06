@@ -3,7 +3,7 @@ sudo yum install epel-release -y
 sudo yum makecache -y
 sudo yum install gcc-c++ python -y
 sudo yum install python-devel -y
-sudo yum install qt5-devel -y
+sudo yum install qt5-qtbase-devel -y
 sudo yum install mercurial -y
 sudo yum install doxygen graphviz ImageMagick -y
 sudo yum install python-sphinx dia texlive texlive-latex -y
