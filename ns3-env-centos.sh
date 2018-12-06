@@ -1,4 +1,6 @@
-sudo yum update
+sudo yum update -y
+sudo yum install epel-release -y
+sudo yum makecache -y
 sudo yum install gcc-c++ python -y
 sudo yum install python-devel -y
 sudo yum install qt5-devel -y
